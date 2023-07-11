@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <title>ورود</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../styles/sign_style.css">
+  </head>
+  <body>
+    <main>
+     
+    <form target="_blank">
+        <!-- اگر بلنک باشد یک تب جدید باز میکند و اطلاعات را آنجا میفرستد
+             ولی اگر نباشد اطلاعات را در همین پیجی که هستیم سند میکند -->
+        <!-- for: id of inputs -->
+        
+        <div class="sign_group_form">
+          <label for="phone">تلفن همراه</label>
+          <input class="sign_form" type="tel" id="username" name="username" required>
+          <label for="email">آدرس ایمیل</label>
+          <input class="sign_form" type="email" id="email" name="email" required>
+          <label for="password">رمز ورود</label>
+          <input class="sign_form" type="password" id="password" name="password" required>
+          <label for="password">تکرار ورود</label>
+          <input class="sign_form" type="password" id="password" name="password" required>
+       
+        </div>
+        
+        <div>
+          <button class="sign_button btn btn-group" type="submit">ورود</button>
+        </div>
+
+      </form>
+    </main>
+    <script src="sign_script.js"></script>
+  </body>
+</html>
