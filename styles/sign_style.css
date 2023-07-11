@@ -7,31 +7,59 @@
 @font-face {
     font-family: yekan;
     src: url(../fonts/Iranian\ Sans.ttf);
+    /* src: url(../fonts/Iranian\ Sans.ttf); */
 }
 
-.sign_group_form {
-    background-color: #5a2572;
+
+.icon{
+  width: 30px;
+  margin-left: 40px;
+   margin-right: 20px; 
+  object-position: center;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.sign_group_form, .type-of-orders {
+    /* background-color: #5a2572; */
     border-radius: 5px;
-    box-shadow: 0px 0px 5px #789497;
-    margin-bottom: 20px;
-    padding: 20px;
-    position: relative;
+    /* background-size: cover; */
+    /* box-shadow: 0px 0px 5px #789497; */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    /* display: inline-block; */
+    /* direction: inherit; */
+    text-align: center;
+    left: 140px;
+    /* padding: 10px 30px 10px; */
+    /* text-align: center; */
   }
   
-  .sign_form{
+  .sign_form, .sign{
+    display: flex;
     margin: 10px;
     padding: 10px;
-    margin-left: 0%;
+    /* margin-left: 0%; */
+    border-radius: 18px;
+    /* direction: ltr;
+    text-align: left; */
+    flex-flow: wrap row;
+    justify-content: space-around;
+  }
+ 
+  .sign_form:focus, .sign:focus{
+    background-color:rgb(170, 225, 235)
   }
   .do_center{
     text-align: center;
     padding: 10px 10px 10px;
   }
-  #passsTextAlign{
-    padding: 0%;
-  }
- 
-  button[type="submit"] {
+  
+  .sign_button {
     background-color: #4CAF50;
     border: none;
     border-radius: 7px;
@@ -42,15 +70,15 @@
     padding: 10px;
     /* delay to change color when honor */
     transition: background-color 0.3s;
-    text-align: center;
     padding: 10px;
   }
   
-  button[type="submit"]:hover {
+  .sign_button:hover {
     background-color: #3e8e41;
   }
 
-/*   signin */
+  
+/* دوتای زیر مربوط به صفحه ورود کاربر است */
 .background-overlay {
   position: fixed;
   top: 0;
@@ -61,6 +89,7 @@
   z-index: 1;
 }
 
+/* کلاس signin-modal برای Modal استفاده می شود */
 .signin-modal {
   position: fixed;
   top: 50%;
